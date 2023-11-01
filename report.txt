@@ -1,0 +1,26 @@
+The analyses results of Iris_petal.csv: 
+
+variable_X minimum value: 1.0
+variable_Y minimum value: 0.1
+variable_X maximum value: 6.9
+variable_Y maximum value: 2.5
+variable_X mode value: 1.5
+variable_Y mode value: 0.2
+variable_X summation: 563.8
+variable_Y summation: 179.8
+variable_X average: 3.759
+variable_Y average: 1.199
+variable_X standard Deviation: 1.759
+variable_Y standard Deviation: 0.761
+variable_X variance: 3.113
+variable_Y variance: 0.582
+variable_X entropy: 5.034
+variable_Y entropy: 4.066
+covariance: 1.288
+correlation: 0.963
+KL-divergence: 21.168
+t_statistic: 0.104
+degree of freedom: 298
+t-test result: Fail to reject the null hypothesis
+
+Report Time: 2023-11-01 18:39:21
