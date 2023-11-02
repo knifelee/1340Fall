@@ -62,7 +62,7 @@ statistics = data_analyze(variable_X, variable_Y)
 analyses_report(statistics, file_name="input.csv")
 ```
 
-## Example
+## Example 1:
 
 Here's an example of how to use this project:
 
@@ -83,6 +83,43 @@ The report will be saved as "report.txt" in the current working directory.
 
 Users (my dear TAs) are also encouraged to use the given example dataset **Iris_petal.csv** and the driver code in **'main.py'** to test the code.
 The example dataset are selected from a well-known AI benchmark -- Iris at "https://www.kaggle.com/datasets/uciml/iris". We used the columns 'PetalLengthCm' and 'PetalWidththCm'.
+
+## Example 2: A practical input and output of the data_analyze() function
+The example of the functional program's input should looks like:
+```python
+Variable_X, Variable_Y = [1, 2, 3, 2, 1], [2, 4, 1, 2, 3]
+```
+The example of the output should look like:
+
+- please give the file path you would like to output the results:result.txt
+- The analyses results of Iris_petal.csv: 
+
+- variable_X minimum value: 1
+- variable_Y minimum value: 1
+- variable_X maximum value: 3
+- variable_Y maximum value: 4
+- variable_X mode value: 1
+- variable_Y mode value: 2
+- variable_X summation: 9
+- variable_Y summation: 12
+- variable_X average: 1.8
+- variable_Y average: 2.4
+- variable_X standard Deviation: 0.748
+- variable_Y standard Deviation: 1.02
+- variable_X variance: 0.7
+- variable_Y variance: 1.3
+- variable_X entropy: 1.522
+- variable_Y entropy: 1.922
+- covariance: -0.32
+- correlation: -0.419
+- KL-divergence: 0.4
+- R square value (regression analysis): 0.169
+- t_statistic: 0.233
+- degree of freedom: 8
+- t-test result: Fail to reject the null hypothesis
+
+- Report Time: 2023-11-01 21:13:00
+- The analyses results have been stored in result.txt
 
 ## Requirements
 This project does not require any external packages. It uses only Python's standard libraries.
