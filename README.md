@@ -1,5 +1,5 @@
 # INF1340 - Mid-term Project
-This a repo for display mid-term assignment for INF1340. It can also be found at Github repo: https://github.com/knifelee/1340Fall/edit/main.
+This a repo for display mid-term assignment for INF1340. It can also be found at Github repo: https://github.com/knifelee/1340Fall/.
 
 The project is a Python-based statistical analysis and reporting tool that provides a set of functions for analyzing datasets and generating detailed reports. The tool encompasses a variety of statistical calculations, including analyzing and calculating statistics for single numerical variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests (totally 14 distinct tasks). The project also includes functionality to read data from an input file and generate a report containing analysis results. The project is designed to help users gain insights into their data and make informed decisions based on statistical evidence.
 
