@@ -1,7 +1,19 @@
 # INF1340 - Mid-term Project
 This a repo for display mid-term assignment for INF1340
 
-This project provides a collection of utility functions for analyzing and calculating statistics for single numerical variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests (totally 14 distinct tasks). The project also includes functionality to read data from an input file and generate a report containing analysis results.
+The project is a Python-based statistical analysis and reporting tool that provides a set of functions for analyzing datasets and generating detailed reports. The tool encompasses a variety of statistical calculations, including analyzing and calculating statistics for single numerical variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests (totally 14 distinct tasks). The project also includes functionality to read data from an input file and generate a report containing analysis results. The project is designed to help users gain insights into their data and make informed decisions based on statistical evidence.
+
+## Key Components:
+* Descriptive Statistics: The tool includes functions to compute basic descriptive statistics for a list of numeric values. This includes calculations for the summation, average, standard deviation, variance, minimum, and maximum values.
+* Histogram and Mode: Users can generate a histogram to visualize the distribution of values in a dataset. The mode, which represents the most frequent value, can also be computed.
+* Entropy and KL-Divergence: The tool provides functions to calculate the entropy of a population sampled from a dataset and the Kullback-Leibler (KL) divergence between two datasets. These metrics are useful for information theory and data analysis.
+* Correlation Analysis: The project offers functions to compute both covariance and correlation between two lists of numeric values. This is valuable for assessing the relationship between two variables.
+* Regression Analysis: Users can perform linear regression analysis on two variables. The tool computes the regression parameters, including the slope and intercept, and generates a regression model. It also calculates the R-squared value, which indicates the goodness of fit of the model.
+* Hypothesis Testing (t-Test): The tool includes a t-test function to compare the means of two groups and determine whether the differences are statistically significant. Users can customize the critical value for hypothesis testing.
+* Data Analysis and Reporting: The data_analyze function analyzes a dataset containing two variables and returns a dictionary with various statistics for each variable and their relationships. This includes single variable statistics and two-variable statistics such as covariance, correlation, KL-divergence, and more.
+* File I/O and Reporting: The project can read datasets from input files, and users can specify the separator (e.g., comma, tab) between values. After analysis, the tool generates a detailed report in a text file, which includes all the calculated statistics.
+
+This statistical analysis and reporting tool is valuable for data scientists, analysts, researchers, and anyone who needs to perform statistical analysis on their datasets. It helps in understanding data distributions, relationships, and making data-driven decisions. Future enhancements could include additional statistical tests, support for different file formats, and a user-friendly graphical interface.
 
 ## Modules
 ### 'util.py'
