@@ -1,7 +1,7 @@
 # INF1340 - Mid-term Project
 This a repo for display mid-term assignment for INF1340
 
-This project provides a collection of utility functions for analyzing and calculating statistics for single variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests. The project also includes functionality to read data from an input file and generate a report containing analysis results.
+This project provides a collection of utility functions for analyzing and calculating statistics for single numerical variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests (totally 14 distinct tasks). The project also includes functionality to read data from an input file and generate a report containing analysis results.
 
 ## Modules
 ### 'util.py'
