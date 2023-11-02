@@ -22,11 +22,29 @@ This API documentation provides descriptions, input parameters, output results, 
 ## `utils.py`
 A set of utility functions for statistical analysis, including:
 ### 1. single variable statistics
-**calc_mean(alist)**
+**calc_sum(alist)**
+* **Description**: Calculates the summation value of a list of numeric values.
+* **Input**:
+  - **alist** (list): List of numeric values. 
+* **Output**: Returns the summation value of the list.
+
+**calc_max(alist)**
+* **Description**: Calculates the maximum  value of a list of numeric values.
+* **Input**:
+  - **alist** (list): List of numeric values. 
+* **Output**: Returns the maximum value of the list.
+
+**calc_min(alist)**
+* **Description**: Calculates the minimum value of a list of numeric values.
+* **Input**:
+  - **alist** (list): List of numeric values. 
+* **Output**: Returns the minimum value of the list.
+
+**calc_avg(alist)**
 * **Description**: Calculates the mean of a list of numeric values.
 * **Input**:
   - **alist** (list): List of numeric values. 
-* **Output**: Returns the mean (average) value.
+* **Output**: Returns the maximum value in the list.
 
 **calc_std(alist)**
 * **Description**: Calculates the standard deviation of a list of numeric values.
@@ -51,6 +69,12 @@ A set of utility functions for statistical analysis, including:
 * **Input**:
   - **alist** (list): List of numeric values. 
 * **Output**: Returns the entropy value.
+
+**calc_histogram(alist)**
+* **Description**: Computes the frequency of values in a list of numeric values and returns a dictionary with value frequencies.
+* **Input**:
+  - **alist** (list): List of numeric values. 
+* **Output**: Returns a dictionary where the keys are unique values from the input list, and the values are their corresponding frequencies in the list.
 
 ### 2. two-variable statistics
 **calc_covariance(alist, blist)**
@@ -88,3 +112,11 @@ A set of utility functions for statistical analysis, including:
   - **alist** (list): List of values for the first variable.
   - **blist** (list): List of values for the second variable.
 * **Output**: Returns the R-squared value for regression analyses.
+
+### 3. data analyses function
+**data_analyze(variable_X, variable_Y)**
+* **Description**: Analyzes a dataset of two variables and returns a dictionary containing various statistics for each variable and their relationships.
+* **Input**:
+  - **variable_X** (list): List of values for the first variable.
+  - **variable_Y** (list): List of values for the second variable.
+* **Output**: Returns a dictionary containing minimum, maximum, mode, summation, average, standard deviation, variance, entropy values for single variables, and covariance, correlation, KL-divergence, R-Square values and t-test results for two variables. 
