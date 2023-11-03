@@ -5,7 +5,7 @@
 import time
 from datetime import datetime, date
 
-# the functions to read data from an input file and output the data analyses results to a file.
+# the two functions to read data from an input file and output the data analyses results to a file.
 
 # store the two variables from the input file into separate lists .
 # the value of parameter sep can be something like '\t', ',', ' ', ';' 
@@ -20,14 +20,18 @@ def dataset_read(file_name='input.csv', sep=','):
     print("Dataset Successfully Read!\n")
     return variable_X, variable_Y
 
-# output the analyse result of input datasets into report.txt
-# display the analyse meanwhile
+# output the analyses result of input datasets into a file
+# display the analyses result meanwhile
 # parameter 'dec' means how many digits after the decimal point
-# parameter 'file_name' indicate the input dataset file name
-def analyses_report(statistics={}, dec=3, file_name='input.csv'):
-    with open("report.txt", 'w') as f:
-        print("The analyses results of {}: \n".format(file_name))
-        f.write("The analyses results of {}: \n\n".format(file_name))
+# parameter 'input_file_name' indicates the input dataset file name
+def analyses_report(statistics={}, dec=3, input_file_name='input.csv'):
+
+    # Prompt the user for the output file name.
+    output_file_name = input("please give the file path you would like to output the results:")
+
+    with open(output_file_name, 'w') as f:
+        print("The analyses results of {}: \n".format(input_file_name))
+        f.write("The analyses results of {}: \n\n".format(input_file_name))
         
         # iterate all the analyses results, output and display it
         for k, v in statistics.items():
@@ -43,4 +47,5 @@ def analyses_report(statistics={}, dec=3, file_name='input.csv'):
         today = date.today()
         print("\nReport Time: {} {}".format(today, current_time))
         f.write("\nReport Time: {} {}\n".format(today, current_time))
-        
+    
+    print("The analyses results have been stored in {}".format(output_file_name))

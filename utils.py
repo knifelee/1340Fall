@@ -15,7 +15,6 @@ SMOOTH_VALUE = 1e-9
 # Input: a list of numeric values in alist
 # output: the summation value of the list
 def calc_sum(alist):
-    
     s = 0
     for v in alist:
         s += v
@@ -47,6 +46,7 @@ def calc_std(alist):
 
 # Input: a list of numeric values in alist
 # Output: the variance of the list
+# note that here we consider another notation of variance where the results should be divided by (n-1) where n is the length of the list.
 def calc_variance(alist):
     sd = calc_std(alist)
     return sd**2 * len(alist) / (len(alist)-1)
@@ -104,7 +104,7 @@ def calc_mode(alist):
 
 
 # Input: a list of numeric values in alist
-# Output: the entropy of the population where the list is sampled from
+# Output: the entropy of this list's distribution
 def calc_entropy(alist):
     variable = calc_histogram(alist)
     list_length = len(alist)
@@ -133,7 +133,7 @@ def calc_covariance(alist, blist):
 
     # compute all the coefficiency of all the pairs of values in alist and blist
     cor_list = [(alist[i] - avg_alist) * (blist[i] - avg_blist) for i in range(len(alist))]
-    return calc_avg(cor_list)
+    return calc_sum(cor_list)/ (len(alist)-1)
 
 
 # compute correlation of two variables
@@ -147,7 +147,8 @@ def calc_correlation(alist, blist):
         return None
 
     # Calculate the correlation coefficient
-    return calc_covariance(alist, blist) / (calc_std(alist) * calc_std(blist))
+    coefficient = calc_covariance(alist, blist) / (calc_std(alist) * calc_std(blist)) / len(alist) * (len(alist)-1)
+    return coefficient
 
 
 # get the KL-divergence of two variables
@@ -167,6 +168,7 @@ def calc_kld(alist, blist):
     
     return kl_divergence
 
+# use regression analyses to see the relationship of two variables
 def regression_analyses(alist, blist):
     mean_x, mean_y = calc_avg(alist), calc_avg(blist)
     variance_x = calc_variance(alist)

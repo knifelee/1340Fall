@@ -22,5 +22,5 @@ variable_X, variable_Y = dataset_read(file_name)
 # data analyses results of variable_X and variable_Y
 statistics = data_analyze(variable_X, variable_Y)
 # display and log the results
-analyses_report(statistics, file_name=file_name) 
+analyses_report(statistics, input_file_name=file_name) 
 
