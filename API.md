@@ -11,12 +11,12 @@ This API documentation provides descriptions, input parameters, output results, 
   - **variable_X** (list of float): List of values for the first variable.
   - **variable_Y** (list of float): List of values for the second variable.
 
-**analyses_report(statistics={}, dec=3, file_name='input.csv')**
+**analyses_report(statistics={}, dec=3, input_file_name='input.csv')**
 * **Description**: Outputs the analysis results to a report file and displays them.
 * **Input**:
   - **statistics** (dict): A dictionary containing analysis results.
   - **dec** (int): The number of digits after the decimal point for float numbers (default is 3).
-  - **file_name** (str): The name of the input file (default is 'input.csv').
+  - **input_file_name** (str): The name of the input file (default is 'input.csv').
 * **Output**: None (Generates a report file with analysis results).
  
 ## `utils.py`
@@ -44,7 +44,7 @@ A set of utility functions for statistical analysis, including:
 * **Description**: Calculates the mean of a list of numeric values.
 * **Input**:
   - **alist** (list): List of numeric values. 
-* **Output**: Returns the maximum value in the list.
+* **Output**: Returns the average value in the list.
 
 **calc_std(alist)**
 * **Description**: Calculates the standard deviation of a list of numeric values.
@@ -89,7 +89,7 @@ A set of utility functions for statistical analysis, including:
 * **Input**:
   - **alist** (list): List of values for the first variable.
   - **blist** (list): List of values for the second variable.
-* **Output**: Returns the covariance value.
+* **Output**: Returns the correlation coefficient value.
 
 **calc_kld(alist, blist)**
 * **Description**: Calculates the Kullback-Leibler Divergence (KL-divergence) between two lists of numeric values.
