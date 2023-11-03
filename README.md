@@ -1,10 +1,14 @@
 # INF1340 - Mid-term Project
-This a repo for display mid-term assignment for INF1340. It can also be found at Github repo: https://github.com/knifelee/1340Fall/.
+This is a repo for a mid-term assignment for INF1340. It can also be found at the Github repo: https://github.com/knifelee/1340Fall/.
 - **INF1340H — Programming for Data Science Fall 2023**
 - **Instructor: Dr. Maher Elshakankiri**
 - **Yuxin Gao (1010757986)**
+- **Env: Python 3.X**
 
 The project is a Python-based statistical analysis and reporting tool that provides a set of functions for analyzing datasets and generating detailed reports. The tool encompasses a variety of statistical calculations, including analyzing and calculating statistics for single numerical variable, such as calculating means, variances, as well as statistics for two varibles such as covariances, correlations, and conducting t-tests (totally 14 distinct tasks). The project also includes functionality to read data from an input file and generate a report containing analysis results. The project is designed to help users gain insights into their data and make informed decisions based on statistical evidence.
+
+## Quick Test:
+You can open your terminal and run `main.py`. Note that `Iris_petal.csv` is the example input, and `report.txt` is the output.
 
 ## Key Components:
 * Descriptive Statistics: The tool includes functions to compute basic descriptive statistics for a list of numeric values. This includes calculations for the summation, average, standard deviation, variance, minimum, and maximum values.
